@@ -25,7 +25,7 @@ age_structure_data <- data.frame(
   Percentage = c(17.49, 71.82, 10.69)
 )
 
-# Load Palau data (replace 'your_data_file.csv' with the actual file)
+# Load Palau data 
 palau_all_states_education <- read_csv("palau all states education.csv", show_col_types = FALSE)
 Palau_all_states_GDP <- read_csv("Palau all states GDP.csv", show_col_types = FALSE)
 
@@ -212,3 +212,8 @@ server <- function(input, output) {
 }
 
 shinyApp(ui, server)
+
+##References
+##https://www.cia.gov/the-world-factbook/countries/palau/
+##https://data.adb.org/search/content?keys=palau&sort_by=field_update_date&sort_order=DESC
+##I also got some help from Chatgpt in writing/modifying some code.
